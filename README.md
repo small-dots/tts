@@ -2,6 +2,8 @@
 
 本地 AI 声音创作工作台，使用 Vue 3 / Vite / Ant Design Vue / SCSS 与 Node.js / Express。模型服务独立运行，工作台不修改任何模型代码。
 
+开发交接、需求实现状态与关键实现逻辑见 [AGENTS.md](AGENTS.md)。
+
 ## 快速开始
 
 需要 Node.js **22 或以上**。在此目录运行：
