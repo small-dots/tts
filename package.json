@@ -1,0 +1,30 @@
+{
+  "name": "breeze-tts-studio",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,web -c cyan,green \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite --host 127.0.0.1",
+    "dev:server": "node --watch --env-file-if-exists=.env server/index.js",
+    "build": "vite build",
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^6.0.1",
+    "ant-design-vue": "^4.2.6",
+    "express": "^5.1.0",
+    "lucide-vue-next": "^0.468.0",
+    "multer": "^2.0.2",
+    "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "sass": "^1.93.2",
+    "vite": "^7.1.10"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
